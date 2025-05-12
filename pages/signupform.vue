@@ -11,7 +11,7 @@
           <div class="n-error" v-if="errors.email" id="error" role="alert">{{ errors.email }}</div>
         </div>
         <div class="n-stack n-gap-s n-padding-be-l">
-          <div class="flex flex-row" style="display: flex; flex-direction: row; align-items: flex-end;">
+          <div class="password-input">
             <provet-input :id="'password-input'" v-model="formValues.password" label="Password" :type="showPassword ? 'text' : 'password'" :expand="true" required  />
             <provet-button type="button" variant="plain" @click="togglePassword" :disabled="!formValues.password">
               <provet-icon :name="passwordIcon"></provet-icon>
@@ -117,3 +117,10 @@ const submitForm = () => {
   }
 }
 </script>
+<style lang="scss">
+.password-input {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+</style>

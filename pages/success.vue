@@ -1,5 +1,5 @@
 <template>
-  <section style="background-repeat: no-repeat; background-position: bottom right; height: 80vh; position: relative;">
+  <section class="success-page">
     <section class="n-grid-center n-margin-bs-xl">
       <img :src="logo" alt="Logo" style="width: 75%" />
     </section>
@@ -19,7 +19,7 @@
       </section>
     </section>
 
-    <img class="n-justify-start n-align-end n-illustration" :src="bg2" alt="background" style="position: absolute; bottom: 40px; left: 40px;" />
+    <img class="n-justify-start n-align-end n-illustration" :src="bg2" alt="background" />
   </section>
 </template>
 
@@ -33,6 +33,10 @@ const user = userStore.user;
 </script>
 
 <style lang="scss">
+.success-page {
+  height: 80vh;
+  position: relative;
+}
 .n-logo {
   width: 50%;
   display: block;
@@ -57,5 +61,8 @@ const user = userStore.user;
   animation-fill-mode: both;
   animation-name: fadeIn3;
   opacity: 0;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
 }
 </style>

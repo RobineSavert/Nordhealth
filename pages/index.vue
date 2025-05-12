@@ -1,5 +1,5 @@
 <template>
-  <div style="background-repeat: no-repeat; background-position: bottom right; height: 100vh" :style="{ backgroundImage: 'url(' + bg + ')' }">
+  <div class="bg-design" :style="{ backgroundImage: 'url(' + bg + ')' }">
     <section class="n-grid-center n-margin-bs-xl">
       <video
           width="350"
@@ -33,6 +33,12 @@ import SignUpForm from "~/pages/signupform.vue"
 </script>
 
 <style lang="scss">
+.bg-design {
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  height: 100vh;
+}
+
 .equal-height-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
