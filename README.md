@@ -30,4 +30,4 @@ npm run build
 ```
 
 
-Build with [ProvetCloud Design](https://provetcloud.design) for more information.
+Build with [ProvetCloud Design](https://provetcloud.design) for Nordhealth.
