@@ -11,7 +11,7 @@
         Unfortunately, your browser does not support videos
       </video>
     </section>
-    <section class="n-grid-2 n-container-m n-margin-i-auto n-gap-none equal-height-columns">
+    <section class="n-container-m n-margin-i-auto n-gap-none equal-height-columns">
       <div
           class="min-height-image"
           :style="{ backgroundImage: 'url(' + product + ')' }"
