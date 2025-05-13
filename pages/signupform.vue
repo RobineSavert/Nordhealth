@@ -13,7 +13,7 @@
         <div class="n-stack n-gap-s n-padding-be-l">
           <div class="password-input">
             <provet-input :id="'password-input'" v-model="formValues.password" label="Password" :type="showPassword ? 'text' : 'password'" :expand="true" required  />
-            <provet-button type="button" variant="plain" @click="togglePassword" :disabled="!formValues.password">
+            <provet-button type="button" variant="plain" @click="togglePassword" :disabled="!formValues.password" aria-label="Show Password">
               <provet-icon :name="passwordIcon"></provet-icon>
             </provet-button>
           </div>

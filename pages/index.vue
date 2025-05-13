@@ -1,14 +1,13 @@
 <template>
   <div class="bg-design" :style="{ backgroundImage: 'url(' + bg + ')' }">
     <section class="n-grid-center n-margin-bs-xl">
-      <video
-          width="350"
-          autoplay
-          muted
-          playsinline
-          :poster="logoStatic"
-      >
+      <video  width="350"
+              autoplay
+              muted
+              playsinline
+              :poster="logoStatic">
         <source :src="logo" type="video/mp4">
+        <track :src="captions" kind="captions" srclang="en" label="english_captions">
         Unfortunately, your browser does not support videos
       </video>
     </section>
@@ -28,6 +27,7 @@
 import product from '~/assets/img/product.jpg'
 import bg from '~/assets/img/bg.svg'
 import logo from '~/assets/mp4/logo.mp4'
+import captions from '~/assets/captions/captions_en.vtt'
 import logoStatic from '~/assets/img/logo.svg'
 import SignUpForm from "~/pages/signupform.vue"
 </script>
