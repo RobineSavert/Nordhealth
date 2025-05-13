@@ -40,13 +40,9 @@
     </provet-card>
   </provet-stack>
 </template>
-
 <script setup lang="ts">
 import { computed, ref } from "vue";
 import { useUserStore } from '~/stores/user'
-
-const showPassword = ref(false);
-const receiveUpdates = ref(false);
 
 interface FormErrors {
   email?: string;
@@ -59,14 +55,13 @@ interface FormValues {
   password: string;
 }
 
+const showPassword = ref(false);
+const receiveUpdates = ref(false);
 const errors = ref<FormErrors>({});
 const formValues = ref<FormValues>({
   email: '',
   password: ''
 });
-
-
-
 
 function handleCheckboxChange(event: Event) {
   const target = event.target as HTMLInputElement;
@@ -79,7 +74,6 @@ function clearForm() {
 }
 
 const togglePassword = () => {
-
   if(formValues.value.password.length > 0) {
     showPassword.value = !showPassword.value;
   }
