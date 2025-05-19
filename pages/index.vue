@@ -1,15 +1,7 @@
 <template>
   <div class="bg-design" :style="{ backgroundImage: 'url(' + bg + ')' }">
     <section class="n-grid-center n-margin-bs-xl">
-      <video  width="350"
-              autoplay
-              muted
-              playsinline
-              :poster="logoStatic">
-        <source :src="logo" type="video/mp4">
-        <track :src="captions" kind="captions" srclang="en" label="english_captions">
-        Unfortunately, your browser does not support videos
-      </video>
+      <img :src="logo" alt="Logo" style="width: 75%" />
     </section>
     <section class="n-container-m n-margin-i-auto n-gap-none equal-height-columns">
       <div
