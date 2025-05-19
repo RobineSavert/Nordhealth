@@ -1,6 +1,6 @@
 <template>
   <div class="bg-design" :style="{ backgroundImage: 'url(' + bg + ')' }">
-    <section class="n-grid-center n-margin-bs-xl">
+    <section class="n-grid-center n-margin-bs-xl n-margin-be-l">
       <img :src="logo" alt="Logo" style="width: 75%" />
     </section>
     <section class="n-container-m n-margin-i-auto n-gap-none equal-height-columns">
@@ -18,9 +18,7 @@
 <script setup lang="ts">
 import product from '~/assets/img/product.jpg'
 import bg from '~/assets/img/bg.svg'
-import logo from '~/assets/mp4/logo.mp4'
-import captions from '~/assets/captions/captions_en.vtt'
-import logoStatic from '~/assets/img/logo.svg'
+import logo from "~/assets/img/logo.svg";
 import SignUpForm from "~/pages/signupform.vue"
 </script>
 
